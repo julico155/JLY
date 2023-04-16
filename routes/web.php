@@ -29,10 +29,10 @@ Route::middleware('auth')->group(function () {
 });
 
 
-/*Route::get('/producto', [ProductoController::class, 'index'])->name('producto');
+Route::get('/producto', [ProductoController::class, 'index'])->name('producto');
 Route::get('/producto/create', [ProductoController::class, 'create'])->name('producto.create');
 Route::post('/producto/store', [ProductoController::class, 'store'])->name('producto.store');
-*/
+
 
 Route::resource('producto', ProductoController::class);
 require __DIR__.'/auth.php';
