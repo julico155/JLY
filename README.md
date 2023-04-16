@@ -7,6 +7,48 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Instalacion del proyecto
+
+-   ejecutar xammp
+-   ir a la ruta de xammp 
+-   en la carpeta de htdocs abrir cmd y poner: 
+-   gh repo clone julico155/JLY
+-   duplicar el archivo .env example
+-   cambiar nombre a .env
+-   Abrimos el VSC en la carpeta creada recien y pegamos en la terminal:
+-   composer install
+-   npm install
+-   composer require spatie/laravel-permission
+-   composer require laravel/socialite
+-   php artisan key:generate
+-   php artisan migrate
+-   php artisan migrate:fresh --seed
+-   php artisan serve
+-   npm run dev      //permite correr los cambios en tiempo real
+-   http://127.0.0.1:8000
+
+    # git
+
+    Bajar cambios primero (para que tus cambios se mantenga sigue estos pasos)
+
+    -   git add .
+    -   git commit -m "soy yo otraves"  // el nombre va en comillas
+    -   git pull origin main
+
+    Subir sus cambios al proyecto (para subir tus cambios sigue estos pasos)
+
+    -   git add .
+    -   git commit -m "soy yo"
+    -   git push origin main
+
+# Laravel ejemplos
+-   php artisan make:controller UserController
+-   php artisan make:model User
+-   php artisan make:seeder UsersSeeder
+-   php artisan make:migration create_nombre_table
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
